@@ -1,0 +1,1 @@
+A extreme simple example using babel 6, webpack, react, react-router.

@@ -1,0 +1,35 @@
+{
+  "name": "newspsweb",
+  "version": "1.0.0",
+  "description": "build sps welfactory from scratch",
+  "main": "./js/app.js",
+  "scripts": {
+    "start": "webpack-dev-server  --inline --progress --colors",
+    "build": "webpack --progress --colors"
+  },
+  "author": "Jay Ma",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "history": "^1.13.1",
+    "react": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^1.0.0",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.2.0",
+    "babel-runtime": "^6.2.0"
+  }
+}
