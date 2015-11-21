@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Login = React.createClass({ 
+const Login = React.createClass({ 
 
   render() {
     return(<div>Welcome to login</div>);

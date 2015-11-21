@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link } from 'react-router'
+import Login from './components/Login.js'
 
 const App = React.createClass({
   render() {
@@ -10,6 +11,7 @@ const App = React.createClass({
         <ul>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/inbox">Inbox</Link></li>
+          <li><Link to="/login">Login</Link></li>
         </ul>
         {this.props.children}
       </div>
@@ -47,6 +49,7 @@ render((
       <Route path="inbox" component={Inbox}>
         <Route path="messages/:id" component={Message} />
       </Route>
+      <Route name="login" path="login" component={Login}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
